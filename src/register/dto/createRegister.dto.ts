@@ -15,6 +15,8 @@ export class CreateRegisterDto {
     password: string;
 
     @IsNotEmpty()
+    @MinLength(13)
+    @MaxLength(14)
     phone?: string;
 
     @IsNotEmpty()

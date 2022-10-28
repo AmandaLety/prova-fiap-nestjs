@@ -1,12 +1,12 @@
-import { HttpException, HttpStatus, Injectable } from '@nestjs/common';
-import { CreateRegisterDto } from './dto/create-register.dto';
-import { UpdateRegisterDto } from './dto/update-register.dto';
+import { Injectable } from '@nestjs/common';
+import { CreateRegisterDto } from './dto/createRegister.dto';
+import { UpdateRegisterDto } from './dto/updateRegister.dto';
 
 @Injectable()
 export class RegisterService {
   register: any;
   create(createRegisterDto: CreateRegisterDto) {
-    return `Cliente ${name} cadastrado com sucesso`;
+    return `Cliente ${name} cadastrado com sucesso!`;
   }
 
   findAll() {
